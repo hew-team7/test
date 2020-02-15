@@ -78,8 +78,8 @@ $lat4 = $geo[1];
       //マーカーにポップアップを紐付けする。同時にbindTooltipでツールチップも追加
         L.marker(mpoint, { draggable: true }).bindPopup(popup1).bindTooltip("大阪駅").addTo(map);
         L.marker([<?php echo $lat2?>, <?php echo $lon2?>]).bindPopup(popup2).bindTooltip("HAL大阪").addTo(map);
-        //L.marker([<?php //echo $lat3?>, <?php //echo $lon3?>]).bindPopup(popup3).bindTooltip("HAL大阪").addTo(map);
-        //L.marker([<?php //echo $lat4?>, <?php //echo $lon4?>]).bindPopup(popup4).bindTooltip("HAL大阪").addTo(map);
+        //L.marker([<?php //echo $lat3?>, <?php //echo $lon3?>]).bindPopup(popup3).bindTooltip("").addTo(map);
+        //L.marker([<?php //echo $lat4?>, <?php //echo $lon4?>]).bindPopup(popup4).bindTooltip("").addTo(map);
     }
   </script>
 </head>
