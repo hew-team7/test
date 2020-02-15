@@ -39,7 +39,7 @@ $Coordinates = $contents ->Feature[0]->Geometry->Coordinates;
 $geo = explode(",", $Coordinates);
 $lon3 = $geo[0];
 $lat3 = $geo[1];
- */
+*/
 
 /* 
 //住所4を入れて緯度経度を求める。
@@ -73,13 +73,13 @@ $lat4 = $geo[1];
       //ポップアップオブジェクトを作成
         var popup1 = L.popup().setContent("<?php echo $address1?>");
         var popup2 = L.popup().setContent("<?php echo $address2?>");
-        //var popup3 = L.popup().setContent("<?php echo $address3?>");
-        //var popup4 = L.popup().setContent("<?php echo $address4?>");
+        //var popup3 = L.popup().setContent("<?php //echo $address3?>");
+        //var popup4 = L.popup().setContent("<?php //echo $address4?>");
       //マーカーにポップアップを紐付けする。同時にbindTooltipでツールチップも追加
         L.marker(mpoint, { draggable: true }).bindPopup(popup1).bindTooltip("大阪駅").addTo(map);
         L.marker([<?php echo $lat2?>, <?php echo $lon2?>]).bindPopup(popup2).bindTooltip("HAL大阪").addTo(map);
-        //L.marker([<?php echo $lat3?>, <?php echo $lon3?>]).bindPopup(popup3).bindTooltip("HAL大阪").addTo(map);
-        //L.marker([<?php echo $lat4?>, <?php echo $lon4?>]).bindPopup(popup4).bindTooltip("HAL大阪").addTo(map);
+        //L.marker([<?php //echo $lat3?>, <?php //echo $lon3?>]).bindPopup(popup3).bindTooltip("HAL大阪").addTo(map);
+        //L.marker([<?php //echo $lat4?>, <?php //echo $lon4?>]).bindPopup(popup4).bindTooltip("HAL大阪").addTo(map);
     }
   </script>
 </head>
