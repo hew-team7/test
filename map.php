@@ -74,8 +74,7 @@ $lat4 = $geo[1];
           var map = L.map('mapcontainer', { zoomControl: false });
           var mpoint = [position.coords.latitude, position.coords.longitude];
           map.setView(mpoint, 15);
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: "<a href='https://www.openstreetmap.org/copyright' target='_blank'>地理院タイル</a>"
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
           }).addTo(map);
           //ポップアップオブジェクトを作成
             var popup1 = L.popup().setContent("<?php echo $address1?>");
